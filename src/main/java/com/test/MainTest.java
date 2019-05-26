@@ -17,11 +17,13 @@ public class MainTest {
         String contentHtml = WechatUtils.getContentHtml(d);
         String pulishTime = WechatUtils.getPulishTime(d);
         String contentText = WechatUtils.getContentText(d);
+        String videoUrl = WechatUtils.getVideoUrl(d);
         System.out.println(coverImgUrl);
         System.out.println(titleText);
         System.out.println(contentHtml);
         System.out.println(pulishTime);
         System.out.println(contentText);
+        System.out.println(videoUrl);
     }
 
 

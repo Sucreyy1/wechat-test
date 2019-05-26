@@ -5,6 +5,7 @@ import okhttp3.Call;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.jsoup.nodes.Element;
 import org.slf4j.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -104,6 +105,16 @@ public class WechatUtils {
             return matcher.group().split("=")[1].replace("\"","").trim();
         }
         return null;
+    }
+
+    /**
+     * 获取视频链接
+     * @param document
+     * @return
+     */
+    public static String getVideoUrl(Document document){
+        Element videoElements = document.select(Constant.WECHAT_VIDEO_TAG).first();
+        return videoElements.attr(Constant.WECHAT_ORIGIN_SRC);
     }
 
     /**

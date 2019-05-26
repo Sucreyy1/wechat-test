@@ -20,4 +20,6 @@ public class Constant {
 
     public static final String WECHAT_PUBLISH_TIME = "publish_time";
 
+    public static final String WECHAT_VIDEO_TAG = "iframe";
+
 }
