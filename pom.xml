@@ -16,7 +16,7 @@
 
     <properties>
         <okhttp.version>3.3.0</okhttp.version>
-        <jsoup.verison>1.11.3</jsoup.verison>
+        <jsoup.verison>1.15.3</jsoup.verison>
     </properties>
 
     <dependencies>
